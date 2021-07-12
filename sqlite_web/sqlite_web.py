@@ -16,6 +16,7 @@ from functools import wraps
 from getpass import getpass
 from io import TextIOWrapper
 
+
 # Py2k compat.
 if sys.version_info[0] == 2:
     PY2 = True
@@ -71,6 +72,7 @@ from peewee import IndexMetadata
 from peewee import sqlite3
 from playhouse.dataset import DataSet
 from playhouse.migrate import migrate
+from playhouse.sqlite_ext import SqliteExtDatabase
 
 
 CUR_DIR = os.path.realpath(os.path.dirname(__file__))
